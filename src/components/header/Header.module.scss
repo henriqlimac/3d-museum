@@ -1,0 +1,43 @@
+.navItem {
+  @apply relative
+    text-sm
+    cursor-pointer
+    text-white/60
+    hover:text-white
+    transition;
+}
+
+.navItem:after {
+  content: "";
+  @apply absolute
+    bottom-[-0.15rem]
+    left-0
+    w-full
+    h-[2px]
+    rounded-full
+    bg-white
+    origin-center
+    scale-0
+    transition;
+}
+
+.navItem:hover::after {
+  @apply scale-100;
+}
+
+.customBtn {
+  @apply w-full
+    flex
+    items-center
+    justify-center
+    py-3
+    px-3
+    md:px-7
+    text-xs
+    font-medium
+    bg-white
+    text-black
+    active:scale-95 
+    transition
+    rounded-full;
+}
